@@ -13,7 +13,7 @@ URL shortener for technical task
 
 * DELETE http://localhost:3000/urls/delete Body: slug: string; Deleted specific url by slug
 
-* UPDATE http://localhost:3000/urls/update Body: password: string, update_slug: string; Updates specific url by slug
+* POST http://localhost:3000/urls/update Body: password: string, update_slug: string; Updates specific url by slug
 
 * Database: sqlite
 
