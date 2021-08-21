@@ -26,9 +26,4 @@ class UrlsController < ApplicationController
         url.update(slug: params[:updated_slug])
     end
 
-    def old_slugs
-        urls = Url.old_slugs
-        render json: urls
-    end
-
 end

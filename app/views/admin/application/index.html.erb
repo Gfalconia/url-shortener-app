@@ -17,7 +17,7 @@
   <% end %>
 
   <div>
-    <%= link_to(
+    <%= link_to(  
       t(
         "administrate.actions.new_resource",
         name: display_resource_name(page.resource_name, singular: true).downcase
@@ -26,6 +26,7 @@
       class: "button",
     ) if valid_action?(:new) && show_action?(:new, new_resource) %>
   </div>
+  <div><%= link_to('Delete Old Links', '/admin/delete_old_links', class: "button") %></div>
 </header>
 
 <section class="main-content__body main-content__body--flush">

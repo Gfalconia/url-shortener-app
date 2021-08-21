@@ -27,6 +27,7 @@ class UrlDashboard < Administrate::BaseDashboard
     url
     slug
     clicked
+    created_at
     password
   ].freeze
 
