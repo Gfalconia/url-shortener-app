@@ -22,8 +22,13 @@ class UrlsController < ApplicationController
     end
 
     def update
-        url = Url.find_by(slug: params[:slug])
+        url = Url.find_by(password: params[:password])
         url.update(slug: params[:updated_slug])
+    end
+
+    def old_slugs
+        urls = Url.old_slugs
+        render json: urls
     end
 
 end

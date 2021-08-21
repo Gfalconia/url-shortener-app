@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_21_052751) do
+ActiveRecord::Schema.define(version: 2021_08_21_071546) do
 
   create_table "urls", force: :cascade do |t|
     t.string "url"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2021_08_21_052751) do
     t.integer "clicked", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "password"
   end
 
 end

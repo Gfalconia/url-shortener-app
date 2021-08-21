@@ -14,6 +14,7 @@ class UrlDashboard < Administrate::BaseDashboard
     clicked: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    password: Field::String,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -26,6 +27,7 @@ class UrlDashboard < Administrate::BaseDashboard
     url
     slug
     clicked
+    password
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -37,6 +39,7 @@ class UrlDashboard < Administrate::BaseDashboard
     clicked
     created_at
     updated_at
+    password
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -46,6 +49,8 @@ class UrlDashboard < Administrate::BaseDashboard
     url
     slug
     clicked
+    password
+    created_at
   ].freeze
 
   # COLLECTION_FILTERS
